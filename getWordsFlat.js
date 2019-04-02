@@ -1,11 +1,11 @@
 
 var getWordsFlat = function(words){
 
-	// -----------------------------------
-	//  YOUR CODE
-	//  Flatten the 2D words array using reduce
-	//  Return flat words array
-	// -----------------------------------	
+	//  Flatten the 2D words array using reduce, Return flat words array
+
+	var wordsFlat = words.reduce(function(a,b){
+		return a.concat(b);
+	});
 
 	return wordsFlat;
 }
